@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Color Variables */
-        
-         :root {
+        :root {
             --primary: #2c3e50;
             --secondary: #3498db;
             --accent: #e74c3c;
@@ -20,8 +18,8 @@
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
         }
-        /* Base Styles */
         
+        /* Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -40,10 +38,7 @@
             overflow-x: hidden;
         }
         
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             margin-bottom: 1rem;
             color: var(--primary);
         }
@@ -110,8 +105,8 @@
         .btn-accent:hover {
             background: #c0392b;
         }
-        /* Header & Navigation */
         
+        /* Header & Navigation */
         header {
             background: var(--primary);
             color: white;
@@ -177,8 +172,8 @@
             cursor: pointer;
             font-size: 1.5rem;
         }
-        /* Hero Section */
         
+        /* Hero Section */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
@@ -213,8 +208,8 @@
         .hero-btns .btn {
             margin: 0 10px;
         }
-        /* About Section */
         
+        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -243,8 +238,8 @@
             height: auto;
             display: block;
         }
-        /* Skills Section */
         
+        /* Skills Section */
         .skills {
             background: var(--primary);
             color: white;
@@ -306,8 +301,8 @@
             background: var(--secondary);
             transform: scale(1.05);
         }
-        /* Projects Section */
         
+        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -366,8 +361,8 @@
             font-size: 0.8rem;
             color: var(--primary);
         }
-        /* Contact Section */
         
+        /* Contact Section */
         .contact {
             background: var(--light);
         }
@@ -438,8 +433,8 @@
             min-height: 150px;
             resize: vertical;
         }
-        /* Footer */
         
+        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -506,23 +501,16 @@
             font-size: 0.9rem;
             color: #bdc3c7;
         }
+        
         /* Animations */
-        
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        /* Responsive Design */
         
+        /* Responsive Design */
         @media (max-width: 992px) {
-            .about-content,
-            .contact-container {
+            .about-content, .contact-container {
                 grid-template-columns: 1fr;
             }
             .hero h1 {
@@ -582,7 +570,6 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -609,8 +596,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Web Developer </h1>
-                <p>Specializing in Microsoft 365 automation, PHP development, and creating dynamic, responsive web solutions that drive business growth.</p>
+                <h1>Web Developer & Systems Architect</h1>
+                <p>Specializing in Microsoft 365 automation, custom intranet portals, POS systems, and onboarding solutions that drive business growth for Kiboko Enterprise.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-accent">Get In Touch</a>
@@ -625,11 +612,10 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Creating Digital Solutions </h2>
-                    <p>I'm a dedicated web developer with expertise in Microsoft 365 applications automation, PHP, HTML, CSS, and SQL. At Kiboko Enterprise, I focus on developing efficient, scalable web solutions that streamline business processes and enhance
-                        user experiences.</p>
-                    <p>My work involves creating custom applications that integrate with Microsoft 365 ecosystem, developing responsive websites for Kiboko Store, and implementing database-driven solutions that power our business operations.</p>
-                    <p>I'm passionate about leveraging technology to solve real-world business challenges and constantly exploring new tools and methodologies to improve my craft.</p>
+                    <h2>Building Integrated Digital Ecosystems</h2>
+                    <p>I'm a dedicated web developer at Kiboko Enterprise, focused on building internal tools that streamline operations. My expertise lies in creating cohesive systems—from the K-Connect Intranet Portal to custom POS and onboarding solutions—all designed to automate workflows and enhance connectivity.</p>
+                    <p>My work involves developing custom applications that integrate with the Microsoft 365 ecosystem, designing responsive platforms for organizations like SKLPSUG, and implementing database-driven solutions that power our core business operations.</p>
+                    <p>I'm passionate about leveraging technology to solve complex organizational challenges, creating seamless digital experiences that connect people, processes, and data.</p>
                     <a href="#contact" class="btn">Let's Connect</a>
                 </div>
                 <div class="about-image">
@@ -645,7 +631,7 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-desktop"></i> Web Development</h3>
+                    <h3><i class="fas fa-desktop"></i> Web & Systems Development</h3>
                     <div class="skill-list">
                         <div class="skill-item">PHP</div>
                         <div class="skill-item">HTML5</div>
@@ -653,10 +639,11 @@
                         <div class="skill-item">JavaScript</div>
                         <div class="skill-item">MySQL</div>
                         <div class="skill-item">Responsive Design</div>
+                        <div class="skill-item">REST APIs</div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Microsoft 365 Automation</h3>
+                    <h3><i class="fas fa-cogs"></i> Microsoft 365 & Automation</h3>
                     <div class="skill-list">
                         <div class="skill-item">Power Automate</div>
                         <div class="skill-item">SharePoint</div>
@@ -664,17 +651,19 @@
                         <div class="skill-item">Teams Integration</div>
                         <div class="skill-item">Excel Automation</div>
                         <div class="skill-item">Power BI</div>
+                        <div class="skill-item">Microsoft Graph API</div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <h3><i class="fas fa-tools"></i> Tools & Specializations</h3>
                     <div class="skill-list">
                         <div class="skill-item">Git</div>
                         <div class="skill-item">VS Code</div>
                         <div class="skill-item">Bootstrap</div>
                         <div class="skill-item">jQuery</div>
-                        <div class="skill-item">REST APIs</div>
                         <div class="skill-item">WordPress</div>
+                        <div class="skill-item">POS Architecture</div>
+                        <div class="skill-item">LMS Integration</div>
                     </div>
                 </div>
             </div>
@@ -688,11 +677,27 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kiboko Store E-commerce">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="K-Connect Intranet Portal">
                     </div>
                     <div class="project-content">
-                        <h3>Kiboko Store E-commerce Platform</h3>
-                        <p>A fully responsive e-commerce website with product catalog, shopping cart, and secure checkout system.</p>
+                        <h3>K-Connect Intranet Portal</h3>
+                        <p>A custom SharePoint-based intranet for Kiboko Enterprise, integrating communication, document management, and automated workflows to connect the entire organization.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">SharePoint</span>
+                            <span class="project-tag">Power Automate</span>
+                            <span class="project-tag">Teams</span>
+                            <span class="project-tag">Viva Engage</span>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SKLPSUG Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>SKLPSUG Community Platform</h3>
+                        <p>Responsive website for the Sri Lanka Kotmale Lovers & Past Students United Group, featuring member portals, event management, and interactive community features.</p>
                         <div class="project-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">MySQL</span>
@@ -704,32 +709,32 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Microsoft 365 Automation">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="POS Systems">
                     </div>
                     <div class="project-content">
-                        <h3>Microsoft 365 Business Automation</h3>
-                        <p>Custom workflows and automation solutions for Kiboko Enterprise using Power Automate and Power Apps.</p>
+                        <h3>Custom POS Systems</h3>
+                        <p>A suite of point-of-sale applications for Kiboko Stores, featuring inventory sync, sales analytics, and offline-capable interfaces for seamless retail operations.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Power Automate</span>
-                            <span class="project-tag">Power Apps</span>
-                            <span class="project-tag">SharePoint</span>
-                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">REST API</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Inventory Management System">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="K-Cademy Onboarding System">
                     </div>
                     <div class="project-content">
-                        <h3>Inventory Management System</h3>
-                        <p>A custom PHP/MySQL application for tracking inventory, sales, and supplier information for Kiboko Enterprise.</p>
+                        <h3>K-Cademy Onboarding System</h3>
+                        <p>An automated learning management and onboarding platform using Microsoft 365 tools, streamlining new hire training with structured paths, quizzes, and progress tracking.</p>
                         <div class="project-tags">
-                            <span class="project-tag">PHP</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Bootstrap</span>
-                            <span class="project-tag">REST API</span>
+                            <span class="project-tag">Power Apps</span>
+                            <span class="project-tag">Power Automate</span>
+                            <span class="project-tag">SharePoint</span>
+                            <span class="project-tag">Teams</span>
                         </div>
                         <a href="#" class="btn">View Details</a>
                     </div>
@@ -777,8 +782,8 @@
                         </div>
                         <div>
                             <h3>Websites</h3>
-                            <p></p>
-                            <p></p>
+                            <p>Kiboko Enterprise Portal</p>
+                            <p>SKLPSUG Community Site</p>
                         </div>
                     </div>
                 </div>
@@ -813,7 +818,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Kiboko Dev</h3>
-                    <p>Web developer specializing in Microsoft 365 automation, PHP development, and creating dynamic web solutions for Kiboko Enterprise.</p>
+                    <p>Web developer architecting integrated systems, from intranet portals and POS systems to automated onboarding solutions for Kiboko Enterprise.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
@@ -832,12 +837,12 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Services</h3>
+                    <h3>Core Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Intranet Development</a></li>
                         <li><a href="#">Microsoft 365 Automation</a></li>
-                        <li><a href="#">E-commerce Solutions</a></li>
-                        <li><a href="#">Database Design</a></li>
+                        <li><a href="#">POS System Development</a></li>
+                        <li><a href="#">Onboarding Solutions</a></li>
                         <li><a href="#">API Integration</a></li>
                     </ul>
                 </div>
@@ -845,14 +850,14 @@
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
                         <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
-                        <li><i class="fas fa-envelope"></i> derromu44@gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> dmugooba@gmail.com</li>
                         <li><i class="fas fa-phone"></i> +256755933629</li>
-                        <li><i class="fas fa-globe"></i> derromu44@gmail.com</li>
+                        <li><i class="fas fa-globe"></i> k-connect.kiboko.ug</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025.Derrick web All Rights Reserved.</p>
+                <p>&copy; 2025 Derrick Web | Kiboko Enterprise. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -861,31 +866,26 @@
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
-
         // Form Submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
-
         // Add scroll animation to elements
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -893,14 +893,10 @@
                 }
             });
         }, observerOptions);
-
         // Observe elements for animation
         document.querySelectorAll('.skill-category, .project-card').forEach(el => {
             observer.observe(el);
         });
     </script>
 </body>
-
-
 </html>
-
